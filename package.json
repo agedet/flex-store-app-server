@@ -6,8 +6,8 @@
   "main": "flex-store-backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon flex-store-backend/server.js",
-    "start": "node flex-store-backend/server.js",
+    "dev": "NODE_ENV=development nodemon flex-store-backend/server.js",
+    "start": "NODE_ENV=production node flex-store-backend/server.js",
     "build": "npm install && npm install --prefix flex-store-app && npm run build --prefix flex-store-app"
   },
   "keywords": [],
